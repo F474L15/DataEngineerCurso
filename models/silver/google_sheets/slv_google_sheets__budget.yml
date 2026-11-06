@@ -19,3 +19,6 @@ models:
                   arguments:
                     min_value: 0
                     max_value: "num_orders"
+      - name: quantity_budgeted
+        data_test:
+          - positive_values
