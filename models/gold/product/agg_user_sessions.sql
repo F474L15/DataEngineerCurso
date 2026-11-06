@@ -24,12 +24,12 @@ final as (
         , s.session_start_at_utc
         , s.session_end_at_utc
         , s.session_duration_seconds
-        , round(s.session_duration_seconds / 60, 2) as session_duration_minutes
+        , {{ seconds_to_minutes('s.session_duration_seconds') }} as session_duration_minutes
         , s.page_view_count
         , s.add_to_cart_count
         , s.checkout_count
         , s.package_shipped_count
-        , s.checkout_count > 0                      as did_session_convert
+        , s.checkout_count > 0 as did_session_convert
     from sessions s
     inner join users u on s.user_id = u.user_id
 )
