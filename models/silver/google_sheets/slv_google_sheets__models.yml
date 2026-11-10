@@ -1,7 +1,7 @@
-version: 1
+version: 2
 
 models:
-  - name: google_sheets
+  - name: slv_google_sheets__budget
     database: DEV_SILVER_DB
     schema: google_sheets
     tables:
