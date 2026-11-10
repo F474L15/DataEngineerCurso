@@ -7,7 +7,7 @@
 # El prefijo + indica que la clave es una config y no una subcarpeta.
 # =============================================================================
 
-name: curso_data_engineering
+name: DataEngineerCurso
 version: '1.0.0'
 
 # Solo se usa al ejecutar dbt en local con profiles.yml. En dbt Platform la
