@@ -110,6 +110,7 @@ models:
         +meta:
           owner: equipo-marketing-analytics
         +group: marketing
+        +access: private
       product:
         +schema: product
         +meta:
