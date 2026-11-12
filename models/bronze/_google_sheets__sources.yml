@@ -26,4 +26,3 @@ sources:
             data_tests:
               - positive_values:
                   arguments:
-                    value: 0
